@@ -4,11 +4,11 @@ from predict_core import predict_flu_probability
 st.title("Flu Prediction Model by XGBoost Algorithm")
 
 # -------- Numeric inputs --------
-temp = st.number_input("Temperature", 30.0, 42.0, 37.3, step=1.0)
-height = st.number_input("Height", 1.0, 400.0, 160.0, step=0.5)
-weight = st.number_input("Weight", 1.0, 400.0, 60.0, step=0.5)
+temp = st.number_input("Temperature (°C)", 30.0, 42.0, 37.3, step=1.0)
+height = st.number_input("Height (CM)", 1.0, 400.0, 160.0, step=0.5)
+weight = st.number_input("Weight(KG)", 1.0, 400.0, 60.0, step=0.5)
 DOI = st.number_input("Days of illness", 1, 14, 1)
-WOS = st.number_input("Week of season", 1, 53, 1)
+WOS = st.number_input("Week of year", 1, 53, 1)
 season = st.number_input("Season (1–4)", 1, 4, 1)
 rr = st.number_input("Respiratory rate", 10, 30, 12)
 sbp = st.number_input("Systolic BP", 50, 250, 90)
